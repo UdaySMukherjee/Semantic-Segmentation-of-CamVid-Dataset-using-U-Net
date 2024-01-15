@@ -33,6 +33,7 @@ The Focal Loss, a modification of the cross-entropy loss, is used as the loss fu
 The model is trained over multiple epochs, with the training loss and Intersection over Union (IoU) monitored. IoU measures the overlap between predicted and ground truth masks.
 
 ## Results and Visualization
+![](https://imgur.com/2RjxOEQ.png)
 The training process is visualized by plotting the training and validation loss curves. Additionally, sample images, original masks, and predicted masks are displayed to assess the model's performance.
 
 Conclusion
