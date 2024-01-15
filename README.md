@@ -1,12 +1,12 @@
-Semantic Segmentation of CamVid Dataset using U-Net
+# Semantic Segmentation of CamVid Dataset using U-Net
 
-Overview
+## Overview
 Semantic segmentation is a computer vision task where the goal is to classify each pixel in an image into predefined classes. The U-Net architecture is a popular choice for semantic segmentation tasks due to its ability to capture fine details and spatial relationships. In this documentation, we will explore the implementation of semantic segmentation on the CamVid dataset using the U-Net model.
 
-Dataset Overview
+## Dataset Overview
 The CamVid dataset is a collection of images captured from a vehicle-mounted camera. It is widely used for semantic segmentation tasks and contains images with corresponding pixel-wise labeled masks. The dataset includes 32 different classes, such as road, sidewalk, building, sky, and others.
 
-U-Net Architecture
+## U-Net Architecture
 The U-Net architecture consists of a contracting path, a bottleneck, and an expansive path. The contracting path captures context and spatial information through convolutional and pooling layers, while the expansive path enables precise localization using transposed convolutions. Skip connections between corresponding layers in the contracting and expansive paths help preserve spatial information.
 
 The architecture is divided into the following key components:
@@ -23,16 +23,16 @@ The expansive path consists of transposed convolutions and concatenation with th
 4. Output Layer
 The final layer employs a 1x1 convolution to produce the segmentation map with pixel-wise class predictions.
 
-Data Preprocessing
+## Data Preprocessing
 Images and masks from the CamVid dataset are preprocessed using standard transformations, including resizing and normalization. The masks are converted to one-hot encoded tensors to match the model's output format.
 
-Loss Function and Optimization
+## Loss Function and Optimization
 The Focal Loss, a modification of the cross-entropy loss, is used as the loss function. Stochastic Gradient Descent (SGD) is employed as the optimization algorithm with momentum.
 
-Training
+## Training
 The model is trained over multiple epochs, with the training loss and Intersection over Union (IoU) monitored. IoU measures the overlap between predicted and ground truth masks.
 
-Results and Visualization
+## Results and Visualization
 The training process is visualized by plotting the training and validation loss curves. Additionally, sample images, original masks, and predicted masks are displayed to assess the model's performance.
 
 Conclusion
