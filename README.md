@@ -1,8 +1,5 @@
 # Semantic Segmentation of CamVid Dataset using U-Net
 
-## Overview
-Semantic segmentation is a computer vision task where the goal is to classify each pixel in an image into predefined classes. The U-Net architecture is a popular choice for semantic segmentation tasks due to its ability to capture fine details and spatial relationships. In this documentation, we will explore the implementation of semantic segmentation on the CamVid dataset using the U-Net model.
-
 ## Dataset Overview
 The CamVid dataset is a collection of images captured from a vehicle-mounted camera. It is widely used for semantic segmentation tasks and contains images with corresponding pixel-wise labeled masks. The dataset includes 32 different classes, such as road, sidewalk, building, sky, and others.
 
@@ -29,12 +26,8 @@ Images and masks from the CamVid dataset are preprocessed using standard transfo
 ## Loss Function and Optimization
 The Focal Loss, a modification of the cross-entropy loss, is used as the loss function. Stochastic Gradient Descent (SGD) is employed as the optimization algorithm with momentum.
 
-## Training
-The model is trained over multiple epochs, with the training loss and Intersection over Union (IoU) monitored. IoU measures the overlap between predicted and ground truth masks.
-
 ## Results and Visualization
 ![](https://imgur.com/2RjxOEQ.png)
+
 The training process is visualized by plotting the training and validation loss curves. Additionally, sample images, original masks, and predicted masks are displayed to assess the model's performance.
 
-Conclusion
-Semantic segmentation of the CamVid dataset using the U-Net architecture demonstrates the model's capability to accurately classify pixels into predefined classes. Experimentation with hyperparameters, additional data augmentation, or fine-tuning the model architecture may further improve performance. This documentation serves as a guide for implementing semantic segmentation tasks on similar datasets using the U-Net model.
